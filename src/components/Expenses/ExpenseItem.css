@@ -52,3 +52,9 @@
     padding: 0.5rem 1.5rem;
   }
 }
+
+.expense-item__button {
+  font-size: 1.25rem;
+  margin: 10px;
+  background-color: transparent;
+}
