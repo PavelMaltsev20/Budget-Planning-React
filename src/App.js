@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ExpensesItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
 function App() {
   const expenses = [
@@ -32,31 +32,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-
-        <ExpensesItem
-          title={expenses[0].title}
-          amount={expenses[0].amount}
-          date={expenses[0].date}
-        />
-
-        <ExpensesItem
-          title={expenses[1].title}
-          amount={expenses[1].amount}
-          date={expenses[1].date}
-        />
-
-        <ExpensesItem
-          title={expenses[2].title}
-          amount={expenses[2].amount}
-          date={expenses[2].date}
-        />
-
-        <ExpensesItem
-          title={expenses[3].title}
-          amount={expenses[3].amount}
-          date={expenses[3].date}
-        />
-
+        <Expenses expenses={expenses} />
         <a
           className="App-link"
           href="https://reactjs.org"
