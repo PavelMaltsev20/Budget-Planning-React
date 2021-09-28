@@ -3,7 +3,7 @@
 <img src="https://github.com/PavelMaltsev20/ExpensesApp-React/blob/master/documentation/favicon.png?raw=true" width="200" height="200">
 <div>
   
-# Welcome to Budget Planning project!
+# Welcome to The Budget Planning project!
 
 Tech:
   
@@ -16,7 +16,7 @@ The Budget Planning application was created to help the user control his expense
 
 The user can enter data of his expenses and the applications will automatically calculate how much he spent in a specific month and in a specific year.
 
-By dynamically changing chart, the user can see the visual difference between the months.
+By dynamically changing the chart, the user can see the visual difference between the months.
 
 The user can delete unnecessary information by clicking on the button next to the data.
 
