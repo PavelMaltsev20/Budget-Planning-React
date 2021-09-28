@@ -40,6 +40,7 @@ const ExpenseForm = (props) => {
     });
 
     props.onSaveExpenseData(expenseData);
+    props.onEditingHandler();
   };
 
   return (
@@ -77,6 +78,9 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <button type="submit">Add Expense</button>
+      <button type="cancel" onClick={() => props.onEditingHandler()}>
+        Cancel
+      </button>
     </form>
   );
 };
