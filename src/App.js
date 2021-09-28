@@ -26,18 +26,30 @@ function App() {
     },
   ];
 
+  const [expensesArray, setExpenses] = useState(DUMMY_EXPENSES);
+
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
       return [expense, ...prevExpenses];
     });
   };
 
-  const [expensesArray, setExpenses] = useState(DUMMY_EXPENSES);
+  const deleteExpensesHandler = (idForDelete) => {
+    setExpenses((prevExpenses) => {
+      const expenses = prevExpenses.filter(
+        (current) => current.id !== idForDelete
+      );
+      return expenses;
+    });
+  };
 
   return (
     <div className="App-header">
       <NewExpense onAddExpense={addExpenseHandler} />
-      <Expenses expenses={expensesArray} />
+      <Expenses
+        expenses={expensesArray}
+        onDeleteExpense={deleteExpensesHandler}
+      />
     </div>
   );
 }
