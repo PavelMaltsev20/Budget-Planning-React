@@ -26,6 +26,10 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log(expense);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -33,7 +37,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <NewExpense />
+        <NewExpense onAddExpense={addExpenseHandler} />
         <Expenses expenses={expenses} />
         <a
           className="App-link"
