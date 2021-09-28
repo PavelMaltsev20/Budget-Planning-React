@@ -2,9 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
+import React, { useState } from "react";
 
 function App() {
-  const expenses = [
+  const DUMMY_EXPENSES = [
     {
       id: "e1",
       title: "Toilet Paper",
@@ -27,8 +28,12 @@ function App() {
   ];
 
   const addExpenseHandler = (expense) => {
-    console.log(expense);
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
   };
+
+  const [expensesArray, setExpenses] = useState(DUMMY_EXPENSES);
 
   return (
     <div className="App">
@@ -38,7 +43,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <NewExpense onAddExpense={addExpenseHandler} />
-        <Expenses expenses={expenses} />
+        <Expenses expenses={expensesArray} />
         <a
           className="App-link"
           href="https://reactjs.org"
