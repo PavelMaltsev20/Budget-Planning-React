@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Expenses from "./components/Expenses/Expenses";
-import NewExpense from "./components/NewExpense/NewExpense";
+import NewExpense from "./components/Expenses/NewExpense/NewExpense";
 import React, { useState } from "react";
 
 function App() {
