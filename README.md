@@ -12,7 +12,7 @@ Tech:
   
 Overview: 
   
-The Cost Control an application was created to help the user control his expense.
+The Cost Control an application was created to help the user control his expenses.
 
 The user can enter data of his expenses and the applications will automatically calculate how much he spent in a specific month and in a specific year.
 
