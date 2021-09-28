@@ -3,7 +3,7 @@
 <img src="https://github.com/PavelMaltsev20/ExpensesApp-React/blob/master/documentation/favicon.png?raw=true" width="200" height="200">
 <div>
   
-# Welcome to Cost Control project!
+# Welcome to Budget Planning project!
 
 Tech:
   
@@ -12,7 +12,7 @@ Tech:
   
 Overview: 
   
-The Cost Control an application was created to help the user control his expenses.
+The Budget Planning an application was created to help the user control his expenses.
 
 The user can enter data of his expenses and the applications will automatically calculate how much he spent in a specific month and in a specific year.
 
