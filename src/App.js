@@ -24,6 +24,12 @@ function App() {
       amount: 450,
       date: new Date(2021, 5, 12),
     },
+    {
+      id: "e5",
+      title: "Toy",
+      amount: 29,
+      date: new Date(2021, 5, 16),
+    },
   ];
 
   const [expensesArray, setExpenses] = useState(DUMMY_EXPENSES);
